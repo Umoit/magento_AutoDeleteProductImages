@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Umoit_AutoDeleteProductImages>
+            <active>true</active>
+            <codePool>local</codePool>
+
+        </Umoit_AutoDeleteProductImages>
+    </modules>
+</config>
