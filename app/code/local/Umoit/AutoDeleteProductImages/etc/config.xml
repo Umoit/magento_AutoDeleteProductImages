@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Umoit_AutoDeleteProductImages>
+            <version>0.1.0</version>
+        </Umoit_AutoDeleteProductImages>
+    </modules>
+
+     <global>
+        <models>
+            <autodeleteproductimages>
+                <class>Umoit_AutoDeleteProductImages_Model</class>
+            </autodeleteproductimages>
+        </models>
+        <events>
+            <catalog_product_delete_after_done>
+                <observers>
+                    <autodeleteproductimages>
+                        <class>autodeleteproductimages/observer</class>
+                        <method>processProductAfterDeleteEvent</method>
+                    </autodeleteproductimages>
+                </observers>
+            </catalog_product_delete_after_done>
+        </events>
+    </global>
+</config>
